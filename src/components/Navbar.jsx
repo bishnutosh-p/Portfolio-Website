@@ -7,6 +7,8 @@ import { navLinks } from '../constants'
 import { logo, menu, close } from '../assets'
 
 const Navbar = () => {
+  const [active, setActive] = useState('');
+
   return (
     <nav 
       className={`
@@ -32,7 +34,7 @@ const Navbar = () => {
           }}
         >
           {/* GOTO logo.com and you can make your own, make it and add it to this. */}
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain'/>
+          <img src={logo} alt='logo' className='w-12 h-12 object-contain'/>
           <p className='text-white text-[18px] font-bold cursor-pointer'>
             Bishnutosh Panda
             <span className='sm:block hidden'>
@@ -42,7 +44,13 @@ const Navbar = () => {
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
-            <li>
+            <li
+              key={link.id}
+              className={`${
+                active === link.title ? "text-white" : "text-secondary"
+              } hover:text-white text-[18px] 
+              font-medium cursor-pointer`}
+            >
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
