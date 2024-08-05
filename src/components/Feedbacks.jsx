@@ -1,6 +1,6 @@
 import React from 'react'
-import { styles } from '../styles'
 import { motion } from 'framer-motion'
+import { styles } from '../styles'
 import { fadeIn, textVariant } from '../utils/motion'
 import { SectionWrapper } from '../hoc'
 import { testimonials } from '../constants'
@@ -53,7 +53,7 @@ const Feedbacks = () => {
           </h2>
         </motion.div>
       </div>
-      <div className={`${styles.paddingX} mt-20 pb-14 flex flex-wrap gap-7`}>
+      <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`}>
         {testimonials.map((testimonial,index) => (
           <FeedbackCard
             key={testimonial.name}
