@@ -7,6 +7,10 @@ import { SectionWrapper } from '../hoc'
 import { styles } from '../styles'
 import { slideIn } from '../utils/motion'
 
+// template_lj9z02m
+// service_7anj81f
+// Hdt2qjSXtUOwE9c6T
+
 const Contact = () => {
   const formRef = useRef()
   const [form,setForm] = useState({
@@ -17,9 +21,39 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false)
 
-  const handleChange = (e) => {}
+  const handleChange = (e) => {
+    const { name,value } = e.target
+    setForm({ ...form, [name]:value })
+  }
 
-  const handleSubmit = (e) => {}
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true)
+
+    emailjs.send('service_7anj81f','template_lj9z02m',{
+        from_name: form.name,
+        to_name: "Bishnu",
+        from_email: form.email,
+        to_email: "bishnutoshpanda8249@gmail.com",
+        message: form.message
+      },'Hdt2qjSXtUOwE9c6T'
+    )
+    .then(() => {
+      setLoading(false)
+      alert("Thank You! I will get back to you.. :)")
+
+      setForm({
+        name: '',
+        email: '',
+        message: ''
+      })
+    },(error) => {
+      setLoading(false)
+      console.log(error)
+      alert("Failed to send mail. Please try again later.")
+    })
+    }
+  
 
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
