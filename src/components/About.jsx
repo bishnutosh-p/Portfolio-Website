@@ -17,7 +17,6 @@ const ServiceCard = ({index,title,icon}) => {
           <h3 className='text-white text-[20px] font-bold text-center'>{title}</h3>
         </div>
       </motion.div>
-      {title}
     </Tilt>
   )
 }
