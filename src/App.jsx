@@ -12,8 +12,8 @@ const App = () => {
         </div>
         <About />
         <Education />
-        <Experience />
         <Works />
+        <Experience />
         <Tech />
         {/* <Feedbacks /> Commented this out since currently no testimonials available... LOL*/}
         <div callName="relative z-0">

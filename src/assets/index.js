@@ -32,6 +32,10 @@ import tripguide from "./tripguide.png";
 
 import sulogo from "./sulogo.png";
 import dmslogo from "./dmslogo.png";
+import sylologo from './syllologo.png';
+import googlogo from './googlelogo.png';
+import masailogo from './masailogo.png';
+import corlogo from './courlogo.png';
 
 export {
   logo,
@@ -63,5 +67,9 @@ export {
   jobit,
   tripguide,
   dmslogo,
-  sulogo, 
+  sulogo,
+  corlogo,
+  googlogo,
+  sylologo,
+  masailogo
 };
