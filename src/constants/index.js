@@ -28,7 +28,7 @@ import {
     googlogo,
     sylologo,
     masailogo,
-
+    pwclogo
   } from "../assets";
 
   export const navLinks = [
@@ -37,8 +37,16 @@ import {
       title: "About",
     },
     {
+      id: "education",
+      title: "Education",
+    },
+    {
       id: "work",
       title: "Work",
+    },
+    {
+      id: "certifications",
+      title: "Certifications",
     },
     {
       id: "contact",
@@ -143,23 +151,16 @@ import {
       icon: sylologo,
       iconBg: "#383E56",
       date: "August 2024",
-      points: ["Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+      points: ["Convolutional Neural Network", "Recurrent Neural Network","LSTMs","RAG","Prompt Engineering","Google Gemini"
       ],
     },
     {
-      title: "Data Analytics",
+      title: "Introduction to Data Analytics",
       company_name: "Meta",
       icon: meta,
       iconBg: "#E6DEDD",
       date: "September 2024",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+      points: ["Introduction to DA","OSEMN Framework","Modelling Data","Data Interpretation","Data Storytelling"
       ],
     },
     {
@@ -169,23 +170,47 @@ import {
       iconBg: "#383E56",
       date: "September 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Introduction to Data Analytics","Making Data Driven Decisions","Data Storytelling","Basic Visualization"
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      title: "Cloud Launchpad Program",
+      company_name: "PWC",
+      icon: pwclogo,
+      iconBg: "#FFFFFF",
+      date: "July 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Cloud Computing","Java Programming","RDBMS - MYSQ","Responsive Web Design","DevOPS","Computer Fundamentals"
+      ],
+    },
+    {
+      title: "Data Science, ML & Deep Learning using Python",
+      company_name: "Syllogistek Systems",
+      icon: sylologo,
+      iconBg: "#383E56",
+      date: "August 2023",
+      points: [
+        "ML, Deep Learning","Python","SciKit Learn, Pandas and Numpy","Data Modelling and visualization"
+      ],
+    },
+    {
+      title: "Data Analytics Internship Program",
+      company_name: "Masai School",
+      icon: masailogo,
+      iconBg: "#FFFFFF",
+      date: "September 2022",
+      points: [
+        "Data Analysis","SQL","Tableau","MS-Excel",
+      ],
+    },
+    {
+      title: "For More Courses and Certifications",
+      company_name: "Visit LinkedIn",
+      icon: mobile,
+      iconBg: "#383E56",
+      // date: "July 2024",
+      points: [
+        "LinkedIn : ","www.linkedin.com/in/bishnutosh-p"
       ],
     },
   ];
@@ -205,7 +230,7 @@ import {
     {
       date: "2019 - 2021",
       institution_name: "Demonstration Multipurpose School, BBSR",
-      degree: "Senior Secondary School - 12th",
+      degree: "Senior School (11th - 12th)",
       icon: dmslogo,
       iconBg: "#FFFFFF",
       points: [

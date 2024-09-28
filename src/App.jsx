@@ -17,7 +17,7 @@ const App = () => {
         <Tech />
         {/* <Feedbacks /> Commented this out since currently no testimonials available... LOL*/}
         <div callName="relative z-0">
-          {/* <Contact /> */}
+          <Contact />
           {/* <StarsCanvas />  This thing slows down the loading and causes jiterryness, hence I have commented this out. */}
         </div>
       </div>

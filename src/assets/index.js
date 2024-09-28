@@ -36,6 +36,7 @@ import sylologo from './syllologo.png';
 import googlogo from './googlelogo.png';
 import masailogo from './masailogo.png';
 import corlogo from './courlogo.png';
+import pwclogo from './pwclogo.png';
 
 export {
   logo,
@@ -71,5 +72,6 @@ export {
   corlogo,
   googlogo,
   sylologo,
-  masailogo
+  masailogo,
+  pwclogo,
 };
