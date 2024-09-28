@@ -4,17 +4,13 @@ import {
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
     mongodb,
     git,
-    figma,
-    docker,
     meta,
     starbucks,
     tesla,
@@ -22,13 +18,20 @@ import {
     carrent,
     jobit,
     tripguide,
-    threejs,
     sulogo,
     dmslogo,
     googlogo,
     sylologo,
     masailogo,
-    pwclogo
+    pwclogo,
+    python,
+    pytorch,
+    pandas,
+    bootstrap,
+    tensorflow,
+    numpy,
+    tableau,
+
   } from "../assets";
 
   export const navLinks = [
@@ -91,6 +94,30 @@ import {
   
   const technologies = [
     {
+      name: "Python",
+      icon: python,
+    },
+    {
+      name: "TensorFlow",
+      icon: tensorflow,
+    },
+    {
+      name: "PyTorch",
+      icon: pytorch,
+    },
+    {
+      name: "Pandas",
+      icon: pandas,
+    },
+    {
+      name: "NumPy",
+      icon: numpy,
+    },
+    {
+      name: "Tableau",
+      icon: tableau,
+    },
+    {
       name: "HTML 5",
       icon: html,
     },
@@ -103,20 +130,8 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
     },
     {
       name: "Node JS",
@@ -125,23 +140,19 @@ import {
     {
       name: "MongoDB",
       icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
+    }, // ThreeJS was having trouble with memory with more balls than this so I removed a few.. 
+    // {
+    //   name: "git",
+    //   icon: git,
+    // },
+    // {
+    //   name: "Bootstrap",
+    //   icon: bootstrap,
+    // },
+    // {
+    //   name: "Tailwind CSS",
+    //   icon: tailwind,
+    // },
   ];
   
   const experiences = [

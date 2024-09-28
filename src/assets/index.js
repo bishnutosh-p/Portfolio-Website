@@ -38,6 +38,14 @@ import masailogo from './masailogo.png';
 import corlogo from './courlogo.png';
 import pwclogo from './pwclogo.png';
 
+import pandas from './pandaslogo.png'
+import tensorflow from './tflogo.png'
+import numpy from './numpylogo.png'
+import tableau from './tableaulogo.png'
+import pytorch from './pytorchlogo.png'
+import python from './pythonlogo.png'
+import bootstrap from './bootstraplogo.png'
+
 export {
   logo,
   backend,
@@ -74,4 +82,11 @@ export {
   sylologo,
   masailogo,
   pwclogo,
+  pandas,
+  tableau,
+  python,
+  numpy,
+  pytorch,
+  bootstrap,
+  tensorflow,
 };
