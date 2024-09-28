@@ -7,10 +7,6 @@ import { SectionWrapper } from '../hoc'
 import { styles } from '../styles'
 import { slideIn } from '../utils/motion'
 
-// template_lj9z02m
-// service_7anj81f
-// Hdt2qjSXtUOwE9c6T
-
 const Contact = () => {
   const formRef = useRef()
   const [form,setForm] = useState({
@@ -28,9 +24,9 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true)
+    setLoading(true);
 
-    emailjs.send('service_7anj81f','template_lj9z02m',{
+    emailjs.send('service_m35twlt','template_2tebczh',{
         from_name: form.name,
         to_name: "Bishnu",
         from_email: form.email,
