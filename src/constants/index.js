@@ -23,6 +23,8 @@ import {
     jobit,
     tripguide,
     threejs,
+    sulogo,
+    dmslogo,
   } from "../assets";
 
   export const navLinks = [
@@ -132,7 +134,7 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
+      title: "Generative AI",
       company_name: "Starbucks",
       icon: starbucks,
       iconBg: "#383E56",
@@ -186,26 +188,36 @@ import {
 
   const educations = [
     {
-      date: "2015 - 2019",
-      institution_name: "University of Example",
-      degree: "Bachelor of Science in Computer Science",
-      icon: meta, // Image or logo path
+      date: "2021 - 2025",
+      institution_name: "Silicon University",
+      degree: "B.Tech in Computer Science and Engineering",
+      icon: sulogo,
       iconBg: "#383E56",
       points: [
-        "Graduated with honors.",
-        "Top 10% of the class.",
-        "Relevant coursework: Machine Learning, Data Structures."
+        "Relevant coursework: Machine Learning, Data Structures.",
+        "GPA : 8.47/10"
       ],
     },
     {
-      date: "2020 - 2022",
-      institution_name: "Example University",
-      degree: "Master of Science in Artificial Intelligence",
-      icon: meta,
-      iconBg: "#383E56",
+      date: "2019 - 2021",
+      institution_name: "Demonstration Multipurpose School, BBSR",
+      degree: "Senior Secondary School - 12th",
+      icon: dmslogo,
+      iconBg: "#FFFFFF",
       points: [
-        "Conducted research on deep learning models.",
-        "Published 2 papers in international conferences.",
+        "CBSE : Central Board of Secondary Education",
+        "83.4 %",
+      ],
+    },
+    {
+      date: "2009 - 2019",
+      institution_name: "Demonstration Multipurpose School, BBSR",
+      degree: "High School (1st - 10th)",
+      icon: dmslogo,
+      iconBg: "#FFFFFF",
+      points: [
+        "CBSE : Central Board of Secondary Education",
+        "93%",
       ],
     },
   ];
