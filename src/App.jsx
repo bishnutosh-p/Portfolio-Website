@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter } from "react-router-dom"
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Loader, Tech, Works, StarsCanvas } from "./components"
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, Loader, Tech, Works, StarsCanvas, Education } from "./components"
 
 const App = () => {
   return (
@@ -11,13 +11,14 @@ const App = () => {
           <Hero />
         </div>
         <About />
+        <Education />
         <Experience />
-        <Tech />
         <Works />
-        <Feedbacks />
+        <Tech />
+        {/* <Feedbacks /> Commented this out since currently no testimonials available... LOL*/}
         <div callName="relative z-0">
-          <Contact />
-          <StarsCanvas />
+          {/* <Contact /> */}
+          {/* <StarsCanvas />  This thing slows down the loading and causes jiterryness, hence I have commented this out. */}
         </div>
       </div>
     </BrowserRouter>

@@ -27,14 +27,18 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview</h2>
+        <h2 className={styles.sectionHeadText}>About Me</h2>
       </motion.div>
 
       <motion.p 
         variants={fadeIn("","",0.1,1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I am a full-stack developer with a passion for creating beautiful and functional websites. I am proficient in both front-end and back-end development, and I have experience working with a variety of technologies. I am always looking for new challenges and opportunities to learn and grow as a developer.
+        Dedicated and results-driven professional with a strong background in Data Science, Machine Learning,
+        and Artificial Intelligence. Adept at working in a team as both a leader and player. Seeking to leverage 
+        my skills and experience to contribute to the industry through my skills in Python, Data Science, Artificial
+        Intelligence, Machine Learning, Web Development, Cloud Computing, and IoT. Proficient in various
+        platforms, languages, and technologies.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

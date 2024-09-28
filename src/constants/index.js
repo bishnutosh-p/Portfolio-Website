@@ -24,7 +24,7 @@ import {
     tripguide,
     threejs,
   } from "../assets";
-  
+
   export const navLinks = [
     {
       id: "about",
@@ -42,21 +42,37 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Data Science",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Artificial Intelligence",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Generative AI",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Web Development",
+      icon: reactjs,
+    },
+    {
+      title: "Software Development",
       icon: creator,
     },
+    {
+      title: "IOT",
+      icon: backend,
+    },
+    {
+      title: "Cloud Computing",
+      icon: mobile,
+    },
+    {
+      title: "More Learning...",
+      icon: web
+    }
   ];
   
   const technologies = [
@@ -167,6 +183,32 @@ import {
       ],
     },
   ];
+
+  const educations = [
+    {
+      date: "2015 - 2019",
+      institution_name: "University of Example",
+      degree: "Bachelor of Science in Computer Science",
+      icon: meta, // Image or logo path
+      iconBg: "#383E56",
+      points: [
+        "Graduated with honors.",
+        "Top 10% of the class.",
+        "Relevant coursework: Machine Learning, Data Structures."
+      ],
+    },
+    {
+      date: "2020 - 2022",
+      institution_name: "Example University",
+      degree: "Master of Science in Artificial Intelligence",
+      icon: meta,
+      iconBg: "#383E56",
+      points: [
+        "Conducted research on deep learning models.",
+        "Published 2 papers in international conferences.",
+      ],
+    },
+  ];
   
   const testimonials = [
     {
@@ -261,4 +303,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, testimonials, projects, educations };
