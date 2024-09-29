@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter } from "react-router-dom"
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Loader, Tech, Works, StarsCanvas, Education } from "./components"
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, Loader, Tech, Works, StarsCanvas, Education, Scroller } from "./components"
 
 const App = () => {
   return (
@@ -20,6 +20,7 @@ const App = () => {
           <Contact />
           {/* <StarsCanvas />  This thing slows down the loading and causes jiterryness, hence I have commented this out. */}
         </div>
+        <Scroller />
       </div>
     </BrowserRouter>
   )

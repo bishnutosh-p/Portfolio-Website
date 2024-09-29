@@ -9,6 +9,8 @@ import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import Loader from './Loader';
 import Education from './Education';
+import Scroller from './Scroller';
+
 
 export {
   Hero,
@@ -25,4 +27,5 @@ export {
   StarsCanvas,
   Loader,
   Education,
+  Scroller
 }
