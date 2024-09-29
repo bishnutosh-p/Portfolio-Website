@@ -7,6 +7,13 @@ import { styles } from '../styles'
 import { slideIn } from '../utils/motion'
 import ReCAPTCHA from 'react-google-recaptcha'
 
+const EMAIL_JS_KEY = import.meta.env.VITE_EMAILJS_KEY
+const RECAPTCHA_SITE_KEY = import.meta.env.VITE_RECAPTCHA_ID
+const FROM_EMAIL = import.meta.env.VITE_FROM_EMAIL
+const EMAIL_JS_SID = import.meta.env.VITE_EMAILJS_SERVICE_ID
+const EMAIL_JS_TID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+
+
 const Contact = () => {
   const formRef = useRef()
   const [form, setForm] = useState({
@@ -37,17 +44,17 @@ const Contact = () => {
     setLoading(true)
 
     emailjs.send(
-      'service_m35twlt',
-      'template_2tebczh',
+      EMAIL_JS_SID,
+      EMAIL_JS_TID,
       {
         from_name: form.name,
         to_name: "Bishnu",
         from_email: form.email,
-        to_email: "bishnutoshpanda8249@gmail.com",
+        to_email: FROM_EMAIL,
         message: form.message,
         'g-recaptcha-response': captcha
       },
-      'Hdt2qjSXtUOwE9c6T'
+      EMAIL_JS_KEY
     )
       .then(() => {
         setLoading(false)
@@ -126,7 +133,7 @@ const Contact = () => {
 
           <center>
             <ReCAPTCHA
-              sitekey="6LdH7VEqAAAAAHlcWMz4YYPKpQXvEe0_0njAjqb8"
+              sitekey= {RECAPTCHA_SITE_KEY}
               onChange={handleCaptchaChange}
             />
           </center>
