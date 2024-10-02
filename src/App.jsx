@@ -12,7 +12,7 @@ const App = () => {
         </div>
         <About />
         <Education />
-        <Works />
+        {/* <Works /> */}
         <Experience />
         <Tech />
         {/* <Feedbacks /> Commented this out since currently no testimonials available... LOL*/}
